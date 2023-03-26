@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
 import '../Widgets/HomePageBody.dart';
+import '../Widgets/add_note_sheet.dart';
 
 class HomePageView extends StatelessWidget {
   const HomePageView({super.key});
@@ -11,7 +12,13 @@ class HomePageView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          showModalBottomSheet(
+              context: context,
+              builder: (context) {
+                return AddNoteSheet();
+              });
+        },
         child: const Icon(Icons.add),
       ),
       body: const HomePageBody(),
