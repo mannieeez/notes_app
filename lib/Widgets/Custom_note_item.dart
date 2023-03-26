@@ -7,7 +7,7 @@ class NoteItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 20),
+      padding: const EdgeInsets.symmetric(vertical: 10),
       child: Container(
         padding: EdgeInsets.symmetric(vertical: 25),
         decoration: BoxDecoration(
@@ -27,7 +27,7 @@ class NoteItem extends StatelessWidget {
                 subtitle: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   child: Text(
-                    'The Manni is sending his salutes',
+                    'The Manni is sending his regards.',
                     style: TextStyle(fontSize: 18),
                   ),
                 ),
