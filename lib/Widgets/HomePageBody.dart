@@ -16,7 +16,10 @@ class HomePageBody extends StatelessWidget {
           SizedBox(
             height: 50,
           ),
-          CustomAppBar(),
+          CustomAppBar(
+            Title: 'Notes',
+            icon: Icons.search,
+          ),
           Expanded(child: NotesListView())
         ],
       ),
